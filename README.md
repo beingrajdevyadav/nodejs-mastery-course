@@ -163,7 +163,7 @@ Here are some project ideas based on the Node.js Mastery Course modules:
    ```bash
    node -v     # Check Node.js version
    npm -v      # Check npm version
-```
+
 
 ---
 
