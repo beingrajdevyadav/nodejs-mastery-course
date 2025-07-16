@@ -1,6 +1,6 @@
 # NodeJs Mastery Course
 
----
+
 
 ## Course Overview
 Master the fundamentals of Nodejs and build scalable, high performance applications.
@@ -74,10 +74,11 @@ Master the fundamentals of Nodejs and build scalable, high performance applicati
 2. GraphQL
 3. Microservices architecture
 
+---
 
 # Projects
 
----
+
 
 Here are some project ideas based on the Node.js Mastery Course modules:
 
