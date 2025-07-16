@@ -215,25 +215,9 @@ They help keep your code **organized** and **maintainable**.
 3. **Third-party Modules** – Installed via `npm`  
    Example: `express`, `axios`, `dotenv`, etc.
 
----
-
-### ✏️ Example: User-defined Module
-
-**Step 1:** Create a file named `calc.js`
-```js
-// calc.js
-function add(a, b) {
-  return a + b;
-}
-function subtract(a, b) {
-  return a - b;
-}
-module.exports = { add, subtract };
-
-
-
 
 ---
+
 
 ## 📦 What is npm?
 
