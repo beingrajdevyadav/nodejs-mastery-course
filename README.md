@@ -76,9 +76,135 @@ Master the fundamentals of Nodejs and build scalable, high performance applicati
 
 ---
 
+
+# 📘 Module 01: Node.js Fundamentals
+
+---
+
+## 1. 🚀 Introduction to Node.js
+
+- **Node.js** is an **open-source, cross-platform** runtime environment that allows you to run JavaScript on the **server side**.
+- Built on **Chrome’s V8 JavaScript engine**.
+- Designed for **scalable network applications**.
+- Uses **non-blocking, event-driven** architecture, making it **fast and efficient**.
+
+**🔑 Key Features:**
+- Asynchronous & Event-driven
+- Single-threaded but highly scalable
+- Fast execution using V8 engine
+- Built-in modules for HTTP, File system, etc.
+
+
+
+## 2. 💻 Installing Node.js and Setting Up the Environment
+
+**Steps:**
+1. Download Node.js from [https://nodejs.org](https://nodejs.org)
+2. Install using the setup wizard (LTS version recommended)
+3. Verify installation:
+   ```bash
+   node -v     # Check Node.js version
+   npm -v      # Check npm version
+
+
+
+
+## 3. 🧠 Basic Syntax and Data Types
+
+### 📄 JavaScript Syntax in Node.js
+
+Node.js uses modern JavaScript (ES6+). Common syntax includes:
+
+- `let`, `const` for variable declaration
+- Functions (regular and arrow functions)
+- `require()` to import modules
+- `module.exports` to export functionalities
+
+### 🔢 Data Types in Node.js
+
+#### ✅ Primitive Data Types:
+- `String`
+- `Number`
+- `Boolean`
+- `null`
+- `undefined`
+- `Symbol`
+- `BigInt`
+
+#### ✅ Non-Primitive Data Types:
+- `Object`
+- `Array`
+- `Function`
+
+
+
+
+## 4. 📦 Modules and npm
+
+### 🔹 What Are Modules?
+
+Modules are **independent, reusable units of code** in Node.js.  
+They help keep your code **organized** and **maintainable**.
+
+### 📂 Types of Modules in Node.js
+
+1. **Core Modules** – Built into Node.js  
+   Example: `fs`, `http`, `path`, `os`, `events`
+
+2. **User-defined Modules** – Files you create  
+   Example: `calc.js`, `utils.js`, etc.
+
+3. **Third-party Modules** – Installed via `npm`  
+   Example: `express`, `axios`, `dotenv`, etc.
+
+
+
+
+
+## 📦 What is npm?
+
+### 🔹 Definition
+
+- **npm** stands for **Node Package Manager**
+- It is the **default package manager** for **Node.js**
+- Installed automatically when you install Node.js
+
+
+
+### 🎯 What Does npm Do?
+
+- Installs **third-party packages/modules**
+- Manages **project dependencies**
+- Allows developers to **publish/share** their own packages
+- Helps maintain version control using `package.json`
+
+
+
+### 📁 Key Concepts
+
+- **`package`**: A reusable block of code (library/module)
+- **`package.json`**: A file that holds metadata & dependencies for your project
+- **`node_modules/`**: Folder that stores installed packages
+
+
+
+### 🛠️ Common npm Commands
+
+| Command | Description |
+|--------|-------------|
+| `npm init -y` | Initializes a Node project with default settings |
+| `npm install <package-name>` | Installs a specific package |
+| `npm uninstall <package-name>` | Removes an installed package |
+| `npm list` | Lists installed packages |
+| `npm install` | Installs all dependencies listed in `package.json` |
+| `npm update` | Updates all installed packages |
+| `npm outdated` | Shows outdated packages in your project |
+
+---
+
+
+
 # Projects
-
-
 
 Here are some project ideas based on the Node.js Mastery Course modules:
 
@@ -134,131 +260,3 @@ Here are some project ideas based on the Node.js Mastery Course modules:
 
 
 ---
-
-# 📘 Module 01: Node.js Fundamentals
-
----
-
-## 1. 🚀 Introduction to Node.js
-
-- **Node.js** is an **open-source, cross-platform** runtime environment that allows you to run JavaScript on the **server side**.
-- Built on **Chrome’s V8 JavaScript engine**.
-- Designed for **scalable network applications**.
-- Uses **non-blocking, event-driven** architecture, making it **fast and efficient**.
-
-**🔑 Key Features:**
-- Asynchronous & Event-driven
-- Single-threaded but highly scalable
-- Fast execution using V8 engine
-- Built-in modules for HTTP, File system, etc.
-
----
-
-## 2. 💻 Installing Node.js and Setting Up the Environment
-
-**Steps:**
-1. Download Node.js from [https://nodejs.org](https://nodejs.org)
-2. Install using the setup wizard (LTS version recommended)
-3. Verify installation:
-   ```bash
-   node -v     # Check Node.js version
-   npm -v      # Check npm version
-
-
----
-
-## 3. 🧠 Basic Syntax and Data Types
-
-### 📄 JavaScript Syntax in Node.js
-
-Node.js uses modern JavaScript (ES6+). Common syntax includes:
-
-- `let`, `const` for variable declaration
-- Functions (regular and arrow functions)
-- `require()` to import modules
-- `module.exports` to export functionalities
-
-### 🔢 Data Types in Node.js
-
-#### ✅ Primitive Data Types:
-- `String`
-- `Number`
-- `Boolean`
-- `null`
-- `undefined`
-- `Symbol`
-- `BigInt`
-
-#### ✅ Non-Primitive Data Types:
-- `Object`
-- `Array`
-- `Function`
-
-
----
-
-## 4. 📦 Modules and npm
-
-### 🔹 What Are Modules?
-
-Modules are **independent, reusable units of code** in Node.js.  
-They help keep your code **organized** and **maintainable**.
-
-### 📂 Types of Modules in Node.js
-
-1. **Core Modules** – Built into Node.js  
-   Example: `fs`, `http`, `path`, `os`, `events`
-
-2. **User-defined Modules** – Files you create  
-   Example: `calc.js`, `utils.js`, etc.
-
-3. **Third-party Modules** – Installed via `npm`  
-   Example: `express`, `axios`, `dotenv`, etc.
-
-
----
-
-
-## 📦 What is npm?
-
-### 🔹 Definition
-
-- **npm** stands for **Node Package Manager**
-- It is the **default package manager** for **Node.js**
-- Installed automatically when you install Node.js
-
----
-
-### 🎯 What Does npm Do?
-
-- Installs **third-party packages/modules**
-- Manages **project dependencies**
-- Allows developers to **publish/share** their own packages
-- Helps maintain version control using `package.json`
-
----
-
-### 📁 Key Concepts
-
-- **`package`**: A reusable block of code (library/module)
-- **`package.json`**: A file that holds metadata & dependencies for your project
-- **`node_modules/`**: Folder that stores installed packages
-
----
-
-### 🛠️ Common npm Commands
-
-| Command | Description |
-|--------|-------------|
-| `npm init -y` | Initializes a Node project with default settings |
-| `npm install <package-name>` | Installs a specific package |
-| `npm uninstall <package-name>` | Removes an installed package |
-| `npm list` | Lists installed packages |
-| `npm install` | Installs all dependencies listed in `package.json` |
-| `npm update` | Updates all installed packages |
-| `npm outdated` | Shows outdated packages in your project |
-
----
-
-
-
