@@ -194,22 +194,6 @@ Node.js uses modern JavaScript (ES6+). Common syntax includes:
 - `Array`
 - `Function`
 
-### 💡 Example Code:
-```js
-const name = "Node.js";
-let version = 18;
-const isFast = true;
-const tools = ["npm", "yarn"];
-const config = {
-  engine: "V8",
-  language: "JavaScript"
-};
-function greet() {
-  console.log(`Welcome to ${name}!`);
-}
-greet();
-
-
 
 ---
 
@@ -292,20 +276,5 @@ module.exports = { add, subtract };
 
 ---
 
-### 📁 Example `package.json`
-```json
-{
-  "name": "my-app",
-  "version": "1.0.0",
-  "description": "A sample Node.js app",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
-}
 
 
---- 
