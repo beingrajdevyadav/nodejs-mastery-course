@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/beingrajdevyadav/nodejs-mastery-course/issues"
   },
-  "homepage": "https://github.com/beingrajdevyadav/nodejs-mastery-course#readme"
+  "homepage": "https://github.com/beingrajdevyadav/nodejs-mastery-course#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
