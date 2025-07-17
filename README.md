@@ -202,7 +202,91 @@ They help keep your code **organized** and **maintainable**.
 
 ---
 
+# 📁 Node.js File Handling Guide (ES Modules)
 
+This guide covers how to perform file and directory operations in Node.js using the `fs` and `fs/promises` modules with ES Module (`import`/`export`) syntax.
+
+
+## 📦 Setup
+
+- Ensure `package.json` has `"type": "module"` for `import`/`export` usage.
+- Use `fs` for sync/callback APIs and `fs/promises` for async/await.
+
+
+## 1. Importing File System Modules
+
+- `fs`: Synchronous and callback-based methods.
+- `fs/promises`: Promise-based methods for async/await.
+
+
+## 2. Reading Files
+
+- Synchronous reading using `fs`.
+- Asynchronous reading using `fs/promises`.
+
+
+## 3. Writing Files
+
+- Overwrites file content.
+- Available in sync, callback, and promise forms.
+
+
+## 4. Appending Files
+
+- Adds content to the end of a file.
+- Supported by both `fs` and `fs/promises`.
+
+
+## 5. Deleting Files
+
+- Removes a specified file.
+- Use sync or async depending on the requirement.
+
+
+## 6. Directory Operations
+
+- Create directories (`mkdir`, recursive option available).
+- Read contents of a directory.
+- Remove directories (recursively if needed).
+
+
+## 7. File Statistics
+
+- Retrieve file or directory metadata.
+- Check type, size, creation/modification date, etc.
+
+
+## 8. Renaming and Moving Files
+
+- Rename or move files with the same method.
+- Supported in both sync and async forms.
+
+
+## 9. Watching Files and Directories
+
+- Watch for changes in a file or directory.
+- Useful for logging, live reload, or dev tools.
+
+
+## 10. Working with Streams
+
+- Handle large file reads/writes efficiently.
+- Use `createReadStream` and `createWriteStream`.
+
+
+## 🧠 Best Practices
+
+- Prefer `fs/promises` with async/await for modern apps.
+- Avoid using synchronous methods in production.
+- Always implement error handling using try/catch or error callbacks.
+- Use streams for large file operations to improve performance.
+
+
+## 🔚 Conclusion
+
+Node.js provides robust and flexible tools for file handling. With ES Modules and async/await, managing files becomes cleaner and more maintainable.
+
+---
 
 
 
