@@ -1,5 +1,5 @@
 import { AsyncAppendFile, SyncAppendFile } from "./appendFiles.js";
-import { DeleteFileSync } from "./deleteFiles.js";
+import { AsyncDeleteFile, DeleteFileSync } from "./deleteFiles.js";
 import { AsyncReadFile, ReadFileSync } from "./readFiles.js";
 import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 
@@ -16,4 +16,5 @@ import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 // AsyncAppendFile('sample.txt', "nodejs is very amazing.")
 
 
-DeleteFileSync('sample.txt');
+// DeleteFileSync('sample.txt');
+AsyncDeleteFile('index.html');
