@@ -289,6 +289,102 @@ Node.js provides robust and flexible tools for file handling. With ES Modules an
 
 ---
 
+# 📘 Node.js File Handling Methods (ES Modules Compatible)
+
+A categorized list of commonly used file and directory handling methods from Node.js `fs`, `fs/promises`, and stream APIs.
+
+---
+
+## 📁 File Handling Methods
+
+### ✅ Reading Files
+- `fs.readFile`
+- `fs.readFileSync`
+- `fs/promises.readFile`
+
+
+### ✍️ Writing Files
+- `fs.writeFile`
+- `fs.writeFileSync`
+- `fs/promises.writeFile`
+
+
+
+### ➕ Appending to Files
+- `fs.appendFile`
+- `fs.appendFileSync`
+- `fs/promises.appendFile`
+
+
+
+### ❌ Deleting Files
+- `fs.unlink`
+- `fs.unlinkSync`
+- `fs/promises.unlink`
+
+
+
+### 🔁 Renaming / Moving Files
+- `fs.rename`
+- `fs.renameSync`
+- `fs/promises.rename`
+
+
+
+### 📜 File Stats & Metadata
+- `fs.stat`
+- `fs.statSync`
+- `fs/promises.stat`
+
+
+
+## 📂 Directory Handling Methods
+
+### 📁 Creating Directories
+- `fs.mkdir`
+- `fs.mkdirSync`
+- `fs/promises.mkdir`
+
+
+
+### 📄 Reading Directories
+- `fs.readdir`
+- `fs.readdirSync`
+- `fs/promises.readdir`
+
+
+
+### 🧹 Removing Directories
+- `fs.rmdir` *(legacy, non-recursive)*
+- `fs.rmdirSync`
+- `fs/promises.rmdir`
+- `fs.rm` *(modern, recursive-capable)*
+- `fs.rmSync`
+- `fs/promises.rm`
+
+---
+
+## 🔄 File Watching
+
+- `fs.watch`
+- `fs.watchFile`
+- `fs.unwatchFile`
+
+
+
+## 🚿 File Streams
+
+### 📥 Read Stream
+- `fs.createReadStream`
+
+### 📤 Write Stream
+- `fs.createWriteStream`
+
+
+## 📌 Notes
+
+- Use `fs/promises` for promise-based (async/await) operations.
+- Avoid blocking methods (like `Sync` ones) in performance-critical applications.
 
 
 
