@@ -1,4 +1,4 @@
-import { SyncAppendFile } from "./appendFiles.js";
+import { AsyncAppendFile, SyncAppendFile } from "./appendFiles.js";
 import { AsyncReadFile, ReadFileSync } from "./readFiles.js";
 import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 
@@ -11,4 +11,5 @@ import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 // WriteSyncFiles('sample.txt', "I'm doing nodejs mastery course.");
 // AsyncWriteFiles("sample.txt", 'this is asyc file written content in nodejs mastery course.');
 
-SyncAppendFile('sample.txt', 'I am doing very well.');
+// SyncAppendFile('sample.txt', 'I am doing very well.');
+AsyncAppendFile('sample.txt', "nodejs is very amazing.")
