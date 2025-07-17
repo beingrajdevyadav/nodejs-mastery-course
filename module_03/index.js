@@ -1,5 +1,6 @@
 import { AsyncAppendFile, SyncAppendFile } from "./appendFiles.js";
 import { AsyncDeleteFile, DeleteFileSync } from "./deleteFiles.js";
+import { createDir, deleteDir, readDir } from "./directory.js";
 import { AsyncReadFile, ReadFileSync } from "./readFiles.js";
 import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 
@@ -17,4 +18,9 @@ import {AsyncWriteFiles, WriteSyncFiles} from './writeFiles.js';
 
 
 // DeleteFileSync('sample.txt');
-AsyncDeleteFile('index.html');
+// AsyncDeleteFile('index.html');
+
+
+// createDir("books");
+// readDir('books');
+// deleteDir('books');
