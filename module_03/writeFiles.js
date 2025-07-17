@@ -7,12 +7,19 @@ import { AsyncReadFile } from "./readFiles.js";
 // a) sync way
 // b) async way
 
-const WriteSyncFiles = (filename, content)=>{
+const WriteSyncFiles = (filename, content) => {
     fs.writeFileSync(filename, content);
     console.log("file written successfully.");
-    AsyncReadFile(filename);
+    AsyncReadFile(filename, 'utf-8');
 
 }
 
+// async way write files
 
-export {WriteSyncFiles}
+const AsyncWriteFiles = async (filename, content) => {
+    await fsPromises.writeFile(filename, content);
+    AsyncReadFile(filename, 'utf-8');
+
+}
+
+export { WriteSyncFiles , AsyncWriteFiles}
